@@ -18,7 +18,7 @@ const Header = () => {
       </div>
       <div>
         <ul className="flex gap-6">
-        <li className="cursor-pointer"><Link to="/">Home</Link></li>
+        <li className="cursor-pointer"><Link to="/shopnow">Home</Link></li>
           <li className="cursor-pointer">Cart</li>
         </ul>
       </div>

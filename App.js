@@ -10,7 +10,6 @@ const App = () => {
     <div>
       <Header />
       <Outlet />
-      {/* <Body/> */}
     </div>
   );
 };

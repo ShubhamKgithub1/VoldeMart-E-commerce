@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
-import Hero from "./src/components/Hero";
 import Item from "./src/components/Item";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
@@ -23,10 +22,6 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero />,
-      },
-      {
-        path: "/shopnow",
         element: <Body />,
       },
       {

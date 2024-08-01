@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'playwrite': ['Playwrite AR', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'pacifico':['Pacifico', 'sans-serif'],
+        'audiowide':['Audiowide', 'sans-serif'],
       },
     },
   },

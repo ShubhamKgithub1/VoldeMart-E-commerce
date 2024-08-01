@@ -30,7 +30,7 @@ const Item = () => {
         <button className="border-2 w-[200px] py-2 my-8 rounded-md border-blue-700 bg-indigo-500 text-white transition-transform transform hover:scale-95 hover:bg-indigo-600">
           Add to Cart
         </button>
-        <h2 className="border-2 py-2 px-7 rounded-md border-blue-700  bg-indigo-500 text-white transition-transform transform hover:scale-95 hover:bg-indigo-600"><Link to="/">see other items</Link></h2>
+        <h2 className="border-2 py-2 w-[200px] px-4 rounded-md border-blue-700  bg-indigo-500 text-white transition-transform transform hover:scale-95 hover:bg-indigo-600"><Link to="/">see other items</Link></h2>
       </div>
     </div>
   );

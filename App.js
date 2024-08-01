@@ -4,10 +4,11 @@ import Header from "./src/components/Header";
 import Body from "./src/components/Body";
 import Item from "./src/components/Item";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Contact from "./src/components/Contact";
 
 const App = () => {
   return (
-    <div>
+    <div className="font-poppins">
       <Header />
       <Outlet />
     </div>
@@ -22,6 +23,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       {
         path: "/item/:itemId",

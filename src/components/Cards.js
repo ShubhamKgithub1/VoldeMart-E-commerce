@@ -1,6 +1,6 @@
 const Cards = ({ data }) => {
   return (
-    <div className="border w-[295px] my-4 p-4 flex flex-col gap-5 hover:shadow-2xl rounded-lg  transition-all duration-300 min-h-[550px]">
+    <div className="border w-[295px] my-4 p-4 flex flex-col gap-5 hover:shadow-2xl rounded-lg  transition-all transform hover:scale-[1.02] duration-200 min-h-[550px]">
       <div>
         <img className="h-80" src={data?.image} />
       </div>

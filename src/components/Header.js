@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Header = () => {
+  const cart=useSelector((store)=>store.cart.items);
   return (
     <div className="w-full flex justify-between items-center py-10 px-20 font-semibold text-lg shadow-lg border border-black">
       <div>
@@ -9,7 +11,7 @@ const Header = () => {
         <ul className="flex gap-6">
         <li className="cursor-pointer transition-all transform hover:scale-110"><Link to="/">Home</Link></li>
         <li className="cursor-pointer transition-all transform hover:scale-110"><Link to="/contact">Contact Us</Link></li>
-          <li className="cursor-pointer text-[#7c3aed] transition-all transform hover:scale-110">Cart</li>
+          <li className="cursor-pointer text-[#7c3aed] transition-all transform hover:scale-110"><Link to={"/cart"}>Cart-({cart.length})items</Link></li>
         </ul>
       </div>
     </div>

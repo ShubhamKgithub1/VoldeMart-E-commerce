@@ -27,7 +27,7 @@ const Body = () => {
   if (data !== null)
     return (
       <div>
-        <div className="flex items-center justify-center w-full h-[40vh] bg-[#9333ea]">
+        <div className="flex items-center justify-center w-full h-[40vh] bg-[#9333ea] shadow-xl">
           <div className="text-white font-bold flex flex-col gap-5 text-6xl font-audiowide">
             <div>
               <span>If You Look </span>
@@ -82,7 +82,7 @@ const Body = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-5">
             {FilteredData.map((item) => (
               <Link key={item?.id} to={"/item/" + item?.id}>
                 <Cards data={item} />

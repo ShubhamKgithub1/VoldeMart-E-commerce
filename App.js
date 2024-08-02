@@ -12,10 +12,10 @@ import Cart from "./src/components/Cart";
 const App = () => {
   return (
     <Provider store={AppStore}>
-    <div className="font-poppins">
-      <Header />
-      <Outlet />
-    </div>
+      <div className="font-poppins">
+        <Header />
+        <Outlet />
+      </div>
     </Provider>
   );
 };
@@ -39,7 +39,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/cart",
-        element: <Cart/>,
+        element: <Cart />,
       },
     ],
     errorElement: <Error />,

@@ -34,11 +34,11 @@ const Item = () => {
         <p className="border-b-2 pb-7">Item description: <br/>{filteredItem?.description}</p>
         </div>
         <div className="flex gap-10 items-center">
-        <button className="border-2 w-[200px] py-2 my-8 rounded-md shadow-xl border-blue-700 bg-indigo-500 text-white transition-transform transform hover:scale-95 hover:bg-indigo-600"
+        <button className="border-2 w-[200px] py-2 my-8 rounded-md shadow-xl border-black bg-white text-black transition-transform transform hover:scale-95 hover:bg-black hover:text-white"
         onClick={()=>handleAddItem(filteredItem)}>
           Add to Cart
         </button>
-        <h2 className="border-2 py-2 w-[200px] text-center shadow-xl rounded-md border-blue-700  bg-indigo-500 text-white transition-transform transform hover:scale-95 hover:bg-indigo-600"><Link to={"/cart"}>Go to Cart</Link></h2>
+        <h2 className="border-2 py-2 w-[200px] text-center shadow-xl rounded-md border-black  bg-white text-black transition-transform transform hover:scale-95 hover:bg-black hover:text-white"><Link to={"/cart"}>Go to Cart</Link></h2>
         </div>
       </div>
     </div>

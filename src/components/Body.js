@@ -54,7 +54,7 @@ const Body = () => {
                 <option value="electronics">Electronics</option>
               </select>
               <button
-                className="px-5 py-1 mx-4 rounded-md bg-gray-600 border-[1.4px] border-black hover:bg-black text-white hover:shadow-xl transition-all transform hover:scale-[0.96]"
+                className="px-5 py-1 mx-4 rounded-md border-2 bg-white text-black border-black hover:bg-black font-semibold hover:text-white hover:shadow-xl transition-all transform hover:scale-[0.96]"
                 onClick={filter}
               > 
                 Filter
@@ -70,7 +70,7 @@ const Body = () => {
                 }}
               />
               <button
-                className="search-btn border border-solid hover:bg-black border-black rounded-md px-3 mx-3 lg:px-5 lg:mx-4 bg-gray-600 text-white py-1 hover:shadow-xl transition-all transform hover:scale-[0.97]"
+                className="search-btn border-2 hover:bg-black hover:text-white border-black rounded-md px-3 mx-3 lg:px-5 lg:mx-4 bg-white text-black font-semibold py-1 hover:shadow-xl transition-all transform hover:scale-[0.97]"
                 onClick={() => {
                   const filtered = data.filter((item) =>
                     item.title.toLowerCase().includes(SearchText.toLowerCase())

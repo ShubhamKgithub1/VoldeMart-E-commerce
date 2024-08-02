@@ -17,12 +17,12 @@ const Cart = () => {
         {cartItems && cartItems.length > 0 ? (<div>
           <div className="flex justify-between items-center pb-4">
           <h1 className="font-semibold text-xl self-start justify-center">Items - ({cartItems.length})</h1>
-          <button className=" text-white text-lg py-2 px-4 rounded-xl shadow-xl transition-all transform hover:scale-[0.97] bg-[#8c58e6] border-2 border-[#7c3aed] hover:bg-[#7c3aed]"
+          <button className=" text-balck font-semibold bg-white text-lg py-2 px-4 rounded-xl shadow-xl transition-all transform hover:scale-[0.97] hover:bg-black hover:text-white border-2 border-black"
           onClick={handleAddItem}>Clear Cart</button>
           </div>
           {cartItems.map((item, index) => (<Link to={"/item/" + item?.id}>
             
-            <div key={index} className="border-2 w-[70vw] p-7 my-7 flex flex-row-reverse items-center justify-between shadow-2xl rounded-lg  transition-all transform hover:scale-[1.01] duration-200 max-h-[450px] bg-[#a5f3fc] border-[#64c7d8] hover:bg-[#72c6d4]">
+            <div key={index} className="border-2 w-[70vw] p-7 my-7 flex flex-row-reverse items-center justify-between shadow-2xl rounded-lg  transition-all transform hover:scale-[1.01] duration-200 max-h-[450px] bg-[#a5f3fc] border-[#8adfee] hover:bg-[#8adfee]">
               
               <div className="">
                 <img className="h-[90px] w-[120px] rounded-xl p-1" src={item.image}/>

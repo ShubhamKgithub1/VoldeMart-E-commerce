@@ -2,15 +2,19 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { clearCart, removeItem } from "../utils/cartSlice";
+import { useNotification } from "../utils/useNotification";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const dispatch = useDispatch();
+  const { showNotification } = useNotification();
   const handleClearCart = () => {
     dispatch(clearCart());
+    showNotification("Cart cleared!");
   };
   const handleRemoveItem = (item) => {
     dispatch(removeItem(item));
+    showNotification(`1 Item removed from the cart!`);
   };
 
   return (

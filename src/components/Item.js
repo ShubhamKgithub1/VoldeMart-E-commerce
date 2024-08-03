@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
+import { useNotification } from "../utils/useNotification";
 
 const Item = () => {
   const data = useData();
   const [filteredItem, setfilteredItem] = useState(null);
   const { itemId } = useParams();
+  const { showNotification } = useNotification();
   useEffect(() => {
     if (data !== null) {
       const item = data.find((item) => item?.id === Number(itemId));
@@ -19,6 +21,7 @@ const Item = () => {
   const dispatch = useDispatch();
   const handleAddItem = (filteredItem) => {
     dispatch(addItem(filteredItem));
+    showNotification("Item added to cart!");
   };
 
   return (

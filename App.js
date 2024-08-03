@@ -8,15 +8,18 @@ import Contact from "./src/components/Contact";
 import AppStore from "./src/utils/appStore";
 import { Provider } from "react-redux";
 import Cart from "./src/components/Cart";
+import { NotificationProvider } from "./src/utils/useNotification";
 
 const App = () => {
   return (
-    <Provider store={AppStore}>
-      <div className="font-poppins">
-        <Header />
-        <Outlet />
-      </div>
-    </Provider>
+    <NotificationProvider>
+      <Provider store={AppStore}>
+        <div className="font-poppins">
+          <Header />
+          <Outlet />
+        </div>
+      </Provider>
+    </NotificationProvider>
   );
 };
 

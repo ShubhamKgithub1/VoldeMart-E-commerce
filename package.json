@@ -1,9 +1,7 @@
 {
   "name": "e-commerce-web-app",
   "version": "1.0.0",
-  "description": "E-commerce site",
-  "main": "App.js",
-  "scripts": {
+  "description": "E-commerce site",  "scripts": {
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build index.html"

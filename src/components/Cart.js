@@ -29,7 +29,7 @@ const Cart = () => {
                 Items - ({cartItems.length})
               </h1>
               <button
-                className=" text-balck font-semibold bg-white text-lg py-2 px-4 rounded-xl shadow-xl transition-all transform hover:scale-[0.97] hover:bg-black hover:text-white border-2 border-black"
+                className=" text-black font-semibold bg-white text-lg py-2 px-4 rounded-xl shadow-xl transition-all transform hover:scale-[0.97] hover:bg-black hover:text-white border-2 border-black active:scale-95"
                 onClick={handleClearCart}
               >
                 Clear Cart
@@ -46,7 +46,7 @@ const Cart = () => {
                     src={item.image}
                   />
                   <button
-                    className="text-center bg-white rounded-lg py-1 px-3 border-[1px] border-black font-semibold transition-all transform hover:bg-black hover:text-white"
+                    className="text-center bg-white rounded-lg py-1 px-3 border-[1px] border-black font-semibold transition-all transform hover:bg-black hover:text-white  active:scale-95"
                     onClick={() => handleRemoveItem(item)}
                   >
                     Remove

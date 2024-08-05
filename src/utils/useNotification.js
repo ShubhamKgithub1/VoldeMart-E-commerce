@@ -16,8 +16,8 @@ export const NotificationProvider = ({ children }) => {
     if (notification) {
       const timer = setTimeout(() => {
         setIsVisible(false);
-        setTimeout(() => setNotification(""), 500); // Extra delay to ensure notification is removed after fade-out
-      }, 3000); // Hide notification after 3 seconds
+        setTimeout(() => setNotification(""), 500);
+      }, 3000); 
       return () => clearTimeout(timer);
     }
   }, [notification]);

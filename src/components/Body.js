@@ -55,7 +55,7 @@ const Body = () => {
               <option value="electronics">Electronics</option>
             </select>
             <button
-              className="px-5 py-1 mx-4 rounded-md border-2 bg-white text-black border-black hover:bg-black font-semibold hover:text-white hover:shadow-xl transition-all transform hover:scale-[0.96]"
+              className="px-5 py-1 mx-4 rounded-md border bg-white text-black border-black hover:bg-black font-semibold hover:text-white hover:shadow-xl transition-all transform duration-150 hover:scale-[1.02] active:scale-90"
               onClick={filter}
             >
               Filter
@@ -64,14 +64,14 @@ const Body = () => {
           <div>
             <input
               type="text"
-              className="search-box border border-solid border-black rounded-md w-[200px] p-1 px-2 outline-none"
+              className="search-box border border-solid border-black rounded-md w-[200px] p-1 px-2 outline-none transition-all duration-300 active:scale-[0.98]"
               value={SearchText}
               onChange={(e) => {
                 setSearchText(e.target.value);
               }}
             />
             <button
-              className="search-btn border-2 hover:bg-black hover:text-white border-black rounded-md px-3 mx-3 lg:px-5 lg:mx-4 bg-white text-black font-semibold py-1 hover:shadow-xl transition-all transform hover:scale-[0.97]"
+              className="search-btn border hover:bg-black hover:text-white border-black rounded-md px-3 mx-3 lg:px-5 lg:mx-4 bg-white text-black font-semibold py-1 hover:shadow-xl transition-all transform hover:scale-[1.02] active:scale-90"
               onClick={() => {
                 const filtered = data.filter((item) =>
                   item.title.toLowerCase().includes(SearchText.toLowerCase())

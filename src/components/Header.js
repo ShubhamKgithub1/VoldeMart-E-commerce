@@ -55,9 +55,17 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      {isVisible && (
-        <div className="transition-transform transform ease-in-out delay-1000 pl-4">
-          <ul className="flex flex-col gap-4 pb-4 font-medium">
+      <div
+        className={`transition-all duration-[0.9s] overflow-hidden ${
+          isVisible ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        }`}
+        style={{
+          height: isVisible ? "auto" : "0",
+          opacity: isVisible ? "1" : "0",
+        }}
+      >
+        <div className="pl-4">
+          <ul className="flex flex-col gap-4 pb-4 font-medium text-sm">
             <li className="cursor-pointer transition-all transform active:scale-[0.97]">
               <Link to="/">Home</Link>
             </li>
@@ -69,7 +77,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-      )}
+      </div>
     </div>
   );
 };

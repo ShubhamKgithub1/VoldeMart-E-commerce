@@ -70,9 +70,6 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="cursor-pointer transition-all transform active:scale-[0.97]">
-              <Link to="/contact">About Us</Link>
-            </li>
-            <li className="cursor-pointer transition-all transform active:scale-[0.97]">
               <Link to="/contact">Contact Us</Link>
             </li>
           </ul>

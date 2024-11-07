@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./src/components/Header";
-import Body from "./src/components/Body";
-import Item from "./src/components/Item";
+import Header from "./components/Header";
+import Body from "./components/Body";
+import Item from "./components/Item";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Contact from "./src/components/Contact";
-import AppStore from "./src/utils/appStore";
+import Contact from "./components/Contact";
+import AppStore from "./utils/appStore";
 import { Provider } from "react-redux";
-import Cart from "./src/components/Cart";
-import { NotificationProvider } from "./src/utils/useNotification";
+import Cart from "./components/Cart";
+import { NotificationProvider } from "./utils/useNotification";
 
 const App = () => {
   return (
